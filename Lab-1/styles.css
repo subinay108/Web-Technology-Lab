@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'calibri';
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.paper{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px 84px;
+    border: 1px solid rgb(207, 207, 207);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    text-align: center;
+    margin-bottom: 32px;
+}
+.title p{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.instruction .line-1{
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+}
+.instruction .line-2{
+    text-align: center;
+    padding: 0 8px;
+}
+.instruction{
+    margin-bottom: 24px;
+}
+
+.group{
+    margin-bottom: 12px;
+}
+
+.group-name{
+    font-weight: bold;
+    text-align: center;
+}
+.group-desc{
+    position: relative;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.group-desc .marks{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.question{
+    margin-bottom: 20px;
+}
+
+.options{
+    padding: 4px 20px;
+}
+.mcq .options{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.or{
+    text-align: center;
+    font-weight: bold;
+}
+
+.end-star{
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
