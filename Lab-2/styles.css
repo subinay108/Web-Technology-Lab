@@ -50,3 +50,8 @@ hr{
 .career-objective p{
     text-align: justify;
 }
+
+.table-container{
+    display: flex;
+    justify-content: center;
+}
