@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    font-family: "Noto Sans", serif;
+}
+
+.resume{
+    max-width: 600px;
+    font-size: 1rem;
+}
+
+.resume h1{
+    font-size: 1.5rem;
+}
+
+.resume h2{
+    font-size: 1.15rem;
+}
+
+.title{
+    text-align: center;
+}
+
+.personal-details{
+    display: flex;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 4px;
+}
+
+th{
+    background-color: rgb(212, 212, 212);
+}
+
+hr{
+    height: 2px;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.career-objective p{
+    text-align: justify;
+}
