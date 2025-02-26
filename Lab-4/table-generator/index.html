@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Table Generator</title>
+</head>
+<body>
+    <div class="table-container">
+        <h1 id="title"></h1>
+        <table id="number-table">
+        </table>
+    </div>
+
+
+    <script>
+        const number = parseInt(prompt('Enter number: '));
+        const numberTable = document.getElementById('number-table');
+        document.getElementById('title').innerText = `Table of ${number}`;
+        let s = '';
+        for(let i = 1; i <= 10; i++){
+            s += `<tr> <td>${number}</td> <td>×</td> <td>${i}</td> <td>=</td> <td>${number * i}</td> </tr>`;
+        }
+        numberTable.innerHTML = s;
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <style>
+        body{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 5rem;
+            font-weight: bold;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const questions = [
+        {question: 'What is 2 + 2?', answer: '4'},
+        {question: 'What is 2 + 3?', answer: '5'},
+        {question: 'What is 3 + 2?', answer: '5'},
+        ];
+
+        const userAnswers = [];
+
+        for(const item of questions){
+            const userAnswer = prompt(item.question);
+            userAnswers.push(userAnswer);
+        }
+
+        let score = 0;
+        for(let i = 0; i < questions.length; i++){
+            if(questions[i].answer === userAnswers[i]){
+                score++;
+            }
+        }
+
+        document.write(`Score: ${score} / ${questions.length}`);
+
+    </script>
+</body>
+</html>
