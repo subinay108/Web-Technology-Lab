@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Event Handling</title>
+</head>
+<body onload="handleLoad()">
+    <h1> Perform the events using javascript</h1>
+    
+    <h2>onclick</h2>
+    <p>
+        <button onclick="handleClick(this)">Click</button>
+    </p>
+    
+    <hr>
+    <h2>onmousewheel</h2>
+    <p>
+        <div 
+            style="height: 100px; width: 100px; background: green;" 
+            onwheel="handleMouseWheel">MouseWheel</div>
+    </p>
+
+    <hr>
+    <h2>onload</h2>
+    <p>
+        Reload page to see
+    </p>
+
+    <hr>
+    <h2>onselect, oninput, oninvalid, onreset, onsubmit</h2>
+    <p>
+        <form onreset="handleReset()" onsubmit="handleSubmit()">
+
+            <input 
+                type="text" 
+                onselect="handleSelect()"
+                oninput="handleInput(this)"
+                oninvalid="handleInvalid()"
+                oncut="handleCut()"
+                oncopy="handleCopy()"
+                onpaste="handlePaste()"
+                required>
+
+            <input type="reset">
+            <input type="submit">
+        </form>
+    </p>
+
+    <hr>
+    <h2>resist (cut, copy, paste)</h2>
+    <p>
+        <input size="50" type="text" 
+            value="You can't cut, copy, paste this text"
+            oncopy="return false"
+            oncut="return false"
+            onpaste="return false"
+            onmousedown="return false"
+        />
+
+    </p>
+
+    <script src="script.js"></script>
+</body>
+</html>
