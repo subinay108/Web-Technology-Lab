@@ -1,13 +1,14 @@
 
-function handleClick(element){
+function handleClick(){
     alert('You have clicked the button');
 }
 
-function handleMouseWheel(element){
+function handleMouseWheel(){
+    console.log('hi');
     alert('You have Mouse Wheel event over the green div');
 }
 
-function handleLoad(element){
+function handleLoad(){
     alert('Document is loaded');
 }
 

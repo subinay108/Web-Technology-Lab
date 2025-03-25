@@ -27,3 +27,12 @@ myForm.addEventListener('submit', function(e){
     }
 
 })
+
+function togglePassword(){
+    const pwd = document.getElementById('password');
+    if(pwd.type === 'text'){
+        pwd.type = 'password';
+    }else{
+        pwd.type = 'text';
+    }
+}
