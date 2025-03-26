@@ -14,3 +14,10 @@
 ## Lab-6 Date: 19/03/2025
 - Perform the events using javascript onclick, onmousewheel, onload, onselect, oninput, oninvalid, onreset, onselect, onsubmit, oncut, onpaste, oncopy, resist (cut, copy, paste)
 - Perform Form Validation using Javascript
+
+## Lab-7 Date: 26/03/2025
+- Write a script to prepare a survey form or a login page using php and display the data
+- Write a script to take input from the user and check whether it is armstrong or not
+- Write a script to find the largest of three number using nesting of if..else
+- Write a mathematical calculator program using php
+- Write an age calculator program using php
