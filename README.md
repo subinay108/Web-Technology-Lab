@@ -21,3 +21,8 @@
 - Write a script to find the largest of three number using nesting of if..else
 - Write a mathematical calculator program using php
 - Write an age calculator program using php
+
+## Lab-8 Date: 02/04/2025
+- Create a database named BWU, create a table under that database with name 'btechds-2022/btechds'
+- Prepare a database connection page named as dbconnection.php to connect with BWU
+- Prepare a page named form.php to decorate the html form with the following fields and redirect the data to the insert.php page to store the data into the database
