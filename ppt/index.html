@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation Sem 6 | PHP Filters</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+        }
+        .slides-container{
+            width: 998px;
+            height: 600px;
+            position: relative;
+            border: 2px solid black;
+            border-radius: 28px;
+            display: flex;
+            justify-content: center;
+        }
+        .slides{
+            border-radius: 28px;
+        }
+        .heading{
+            position: absolute;
+            text-align: center;
+            top: -48px;
+        }
+        .code{
+            position: relative;
+            width: 400px;
+            height: 600px;
+            border: 2px solid black;
+            border-radius: 28px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 8px;
+            font-size: 1.2rem;
+        }
+        textarea{
+            width: 380px;
+            height: 380px;
+            padding: 12px;
+            font-size: 1.5rem;
+            border: none;
+            outline: none;
+        }
+
+        .run-btn{
+            padding: 8px;
+            border-radius: 8px;
+            background-color: black;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition-duration: 200ms;
+        }
+        .run-btn:hover{
+            transform: scale(1.05);
+        }
+
+        .output-container{
+            width: 100%;
+            height: 200px;
+            border-top: 2px solid black;
+            padding: 10px;
+        }
+
+        .output{
+            height: 100px;
+            width: 100%;
+            overflow-y: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slides-container">
+        <h1 class="heading">Presentation</h1>
+        <iframe class="slides" src="https://docs.google.com/presentation/d/e/2PACX-1vTeDDCXFD-srKPNVvDV9BUpDyc7OPIcob20gbtEko7n96auikmyac8lzEcqY8a6segM2ZS3p6LKD2DP/pubembed?start=false&loop=false&delayms=3000" 
+        frameborder="0" width="998" height="596" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+
+    <div class="code">
+        <h1 class="heading">Code</h1>
+        <div style="position: relative;">
+            <textarea id="phpCode" class="" placeholder="Type code here..."></textarea>
+        </div>
+        <div class="output-container">
+            
+            <h2>Output: <button class="run-btn" onclick="runCode()">Run Code</button></h2><br>
+            <div class="output">
+                <code id="output">
+
+                </code>
+            </div>
+        </div>
+    </div>
+    <script>
+        function runCode() {
+            const code = document.getElementById('phpCode').value;
+
+            fetch('api.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ code })
+            })
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('output').textContent = data.output;
+            })
+            .catch(err => {
+                document.getElementById('output').textContent = err;
+            });
+        }
+    </script>
+</body>
+</html>
