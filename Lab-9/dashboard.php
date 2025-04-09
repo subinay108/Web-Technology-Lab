@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,20 +17,18 @@
                 <h1>Subisphere</h1>
             </div>
         </a>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#help">Help</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <a href="logout.php" class="cta-btn login-btn">Logout</a>
+            </nav>
     </header>
 
     <!-- Hero Section (Welcome Area) -->
     <section class="hero">
         <div class="hero-content">
             <h1>
-                Hi👋, username!
+                Hi👋, <?php
+                    echo strtoupper($_SESSION['username']);
+                ?>
             </h1>
             <h2>Welcome to Subisphere!</h2>
             <p>Your Gateway to a New World</p>
