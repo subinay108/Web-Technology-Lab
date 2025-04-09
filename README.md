@@ -26,3 +26,7 @@
 - Create a database named BWU, create a table under that database with name 'btechds-2022/btechds'
 - Prepare a database connection page named as dbconnection.php to connect with BWU
 - Prepare a page named form.php to decorate the html form with the following fields and redirect the data to the insert.php page to store the data into the database
+
+## Lab-9 Date: 09/04/2025
+- Signup Page
+- Login and Authentication
