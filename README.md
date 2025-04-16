@@ -30,3 +30,6 @@
 ## Lab-9 Date: 09/04/2025
 - Signup Page
 - Login and Authentication
+
+## Lab-10 Date: 16/04/2025
+- CRUD operations in a table using PHP

@@ -1,0 +1,26 @@
+.title{
+    text-align: center;
+}
+
+table, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px 12px;
+}
+
+input[type="text"]{
+    border: none;
+    outline: none;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+}
+
+.sec-input, .roll-input{
+    width: 40px;
+}
+
+.phone-input{
+    width: 80px;
+}
