@@ -33,3 +33,6 @@
 
 ## Lab-10 Date: 16/04/2025
 - CRUD operations in a table using PHP
+
+## Lab-11 Date: 23/04/2025
+- Session and logout in PHP
