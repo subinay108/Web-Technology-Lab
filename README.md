@@ -36,3 +36,6 @@
 
 ## Lab-11 Date: 23/04/2025
 - Session and logout in PHP
+
+## Lab-12 Date: 30/04/2025
+- Cookies, Filter, file handling, directory access
